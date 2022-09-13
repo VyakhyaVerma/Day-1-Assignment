@@ -1,0 +1,14 @@
+li
+{
+border:2px solid blue;
+list-style: none;
+width:200px;
+background-color: pink;
+padding: 5px;
+margin:1px;
+}
+li:hover
+{
+background-color: blue;
+color: white;
+}
