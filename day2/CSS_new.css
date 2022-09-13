@@ -1,0 +1,25 @@
+.watch
+{
+    border:1px solid black;
+    border-radius:10px;
+    float:left;
+    padding:5px;
+    margin:8px;
+    text-align:center;
+    border-spacing: 10px;
+}
+img
+{
+    width:150px;
+    height:120px;
+    border-radius:10px;
+}
+.Discount{
+ text-decoration:line-through;
+ Color:red;
+}
+.newN
+{
+    margin-left:60px;
+    margin-right: 0px;
+}
