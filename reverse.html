@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Display</title>
+    </head>
+    <body>
+        <h1>Showing the Details</h1>
+        <hr/>
+        <form action="Display.php" method="post">
+            <fieldset>
+                <input type="button" value="Show Details" onclick="back()"/>
+                <br/>
+                <lable>Empno:</lable>
+                <input type="number" name="e1" id="e1"/>
+                <br/>
+                <lable>Ename:</lable>
+                <input type="text" name="e2" id="e2"/>
+                <br/>
+                <lable>Job:</lable>
+                <input type="text" name="e3" id="e3"/>
+                <br/>
+                <lable>Salary:</lable>
+                <input type="number" name="e4" id="e4"/>
+                <br/>
+                <lable>Deptno:</lable>
+                <input type="number" name="e5" id="e5"/>
+                <br/>
+            </fieldset>
+        <script>
+             var a='{"empno":10,"ename":"Jason", "job":"Analyst", "salary":100000, "deptno":24}';
+             function back()
+             {
+                var b=JSON.parse(a);
+                var o1=document.getElementById("e1");
+                var o2=document.getElementById("e2");
+                var o3=document.getElementById("e3");
+                var o4=document.getElementById("e4");
+                var o5=document.getElementById("e5");
+                o1.value=b.empno;
+                o2.value=b.ename;
+                o3.value=b.job;
+                o4.value=b.salary;
+                o5.value=b.deptno;
+             }
+        </script>
+    </body>
+</html>

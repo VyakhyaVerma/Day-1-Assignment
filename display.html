@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>User Details</title>
+    </head>
+    <body>
+        <h1 align="center">Show User Details</h1>
+        <hr/>
+        <input type="button" value="Get User Details" id="b1" onclick="show()">
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <p id="p5"></p>
+        <img id="im1"/>
+        <script>
+            var str='{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"}';
+            function show()
+            {
+                var a=JSON.parse(str);
+                p1.innerText="User ID : " + a.id;
+                p2.innerText="First Name : " + a.first_name;
+                p3.innerText="Last Name : " + a.last_name;
+                p4.innerText="Email : " + a.email;
+                p4.innerText="Avatar :";
+                im1.src=a.avatar;
+                im1.border="2px";
+            }
+        </script>
+    </body>
+</html>
