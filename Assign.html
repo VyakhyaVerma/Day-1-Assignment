@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Employee Details</title>
+        <style>
+        .container 
+        {	
+            margin: 40px auto 0 auto;	
+            display : flex;
+            flex-wrap : wrap;
+        }
+        .container-item 
+        {
+            padding: 20px;
+            border:2px solid gray;
+            margin: 10px;		
+            display: flex;
+            flex-direction: column;
+            flex :  20%;
+            text-align: center;
+
+        }
+        .container-item img
+        {
+            height: 100px;
+            width:100px;
+            align-self: center;
+            border-radius: 50%;
+            justify-content: center;
+        }
+        @media only screen and (max-width: 500px)  
+        { 
+            .container-item 
+            {
+				flex :   50%;
+			}
+        }
+	
+        @media only screen and (max-width: 300px)  
+        { 
+            .container-item 
+			{
+				flex :   100%;
+			}
+        }
+        </style>
+    </head>
+    <body>
+        <h1 align="center">Employee Portal</h1>
+        <hr/>
+        <div class="container">
+            <div class="container-item">
+                <img src="e1.jpg" id="e1"/>
+                <h3>Name 1</h3>
+                <h4>Designation of the Employee</h4>
+                <h3>Learn more</h3>
+            </div>
+            <div class="container-item">
+                <img src="e2.jpg" id="e2"/>
+                <h3>Name 2</h3>
+                <h4>Designation of the Employee</h4>
+                <h3>Learn more</h3>
+            </div>
+            <div class="container-item">
+                <img src="e3.jpg" id="e3"/>
+                <h3>Name 3</h3>
+                <h4>Designation of the Employee</h4>
+                <h3>Learn more</h3>
+            </div>
+            <div class="container-item">
+                <img src="e4.jpg" id="e4"/>
+                <h3>Name 4</h3>
+                <h4>Designation of the Employee</h4>
+                <h3>Learn more</h3>
+            </div>
+            <div class="container-item">
+                <img src="e5.jpg" id="e5"/>
+                <h3>Name 5</h3>
+                <h4>Designation of the Employee</h4>
+                <h3>Learn more</h3>
+            </div>
+            <div class="container-item">
+                <img src="e6.jpg" id="e6"/>
+                <h3>Name 6</h3>
+                <h4>Designation of the Employee</h4>
+                <h3>Learn more</h3>
+            </div>
+            <div class="container-item">
+                <img src="e7.jpg" id="e7"/>
+                <h3>Name 7</h3>
+                <h4>Designation of the Employee</h4>
+                <h3>Learn more</h3>
+            </div>
+            <div class="container-item">
+                <img src="e8.jpg" id="e8"/>
+                <h3>Name 8</h3>
+                <h4>Designation of the Employee</h4>
+                <h3>Learn more</h3>
+            </div>
+        </div>
+    </body>
+</html>
