@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Calculate</title>
+    </head>
+    <body>
+        <form action="Update.asp" method="post">
+            <fieldset style="border:4px solid rgb(136, 52, 155); width:200px;">
+                <label>Product Name:</label>
+                <input type="text" id="t1" name="Name">
+                <br/><br/>
+                <label>Unit Price:</label>
+                <input type="text" id="t2" name="Name">
+                <br/><br/>
+                <label>Quantity:</label>
+                <input type="text" id="t3" name="Name">
+                <br/><br/>
+                <input type="button"   value="Get Total"   onclick="total()"  />
+                <br/><br/>
+                <p id="x"></p>
+        </form>
+        <script>
+            function total()
+            {
+                var obj1=document.getElementById("t2");
+                var obj2=document.getElementById("t3");
+                var obj3=document.getElementById("x");
+                var total=parseInt(obj1.value)*parseInt(obj2.value)
+                obj3.innerText  = "Total Amount : " + total;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Select a Colour!</title>
+    </head>
+    <body id="b">
+        <h2>Please select a color of your choice</h2>
+        <hr/>
+        <label>Select a color:</label><br/><br/>
+                <select name="color" id="color">
+                    <option>Red</option>
+                    <option>Yellow</option>
+                    <option>Blue</option>
+                    <option>Green</option>
+                    <option>Pink</option>
+                    <option>Purple</option>
+                    <option>Grey</option>
+                </select>
+                <br/><br/>
+                <input type="button" onclick="f1()"   value="Set Item" />
+                <input type="button" onclick="f2()"   value="Get Item" />
+                <input type="button" onclick="f3()"   value="Remove Item" />
+                <br></br>
+                <input type="button"   value="Change Background"   onclick="change()"  />
+                <hr/>             
+                <script>	
+                    function f1()
+                    {
+                        var obj = document.getElementById("color");
+                        localStorage.setItem("uid",  obj.value);
+                        alert("The color has been selected");
+                    }	
+                    
+                    function f2()
+                    {	
+                        var str  =  localStorage.getItem("uid");
+                        alert("Color  : " + str);
+                    }
+                    
+                    function f3()
+                    {	
+                        localStorage.removeItem("uid");
+                        alert("Color removed from webstorage.");
+                    }	
+                    function change()
+                    {
+                        var obj1=document.getElementById("color");
+                        var x=obj1.value;
+                        document.body.style.backgroundColor = x;
+                    }
+                </script>
+
+    </body>
+</html>
