@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Bank Account Form</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" />
+        <style>
+            div
+            {
+              margin-left: 30%;  
+              width: 40%;
+            }
+            label
+            {
+                font-size: 15px;
+                font-weight: bold;
+            }
+            span
+            {
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 align="center">Account Opening Form</h1>
+        <hr/>
+        <div>
+        <form id="f1" action="Open.php" method="post">
+            <fieldset>
+                <label>Name <Span>*</Span></label>
+                <input type="text" id="t1" required autofocus placeholder="First Name">
+                <input type="text" id="t1" required placeholder="Last Name">
+                <br/>
+                <label>Account Number <Span>*</Span></label>
+                <input type="number" required pattern="\d{10}">
+                <input type="radio" id="r1" name="r1" value="Savings"/>
+                <label>Savings</label>
+                <input type="radio" id="r1" name="r1" value="Checking"/>
+                <label>Checking</label>
+                <br/>
+                <label>Address*</label>
+                <br/>
+                <input type="text" id="a1" placeholder="Street Address">
+                <br/>
+                <input type="text" id="a2" placeholder="Street Address Line 2">
+                <br/>
+                <input type="text" id="a3" placeholder="City">
+                <input type="text" id="a4" placeholder="State/Province">
+                <br/>
+                <input type="number" required pattern="\d{6}" placeholder="Postal/ZIP Code">
+                <label>Country:</label>
+                <select>
+                    <option>India</option>
+                    <option>America</option>
+                    <option>England</option>
+                </select>
+                <br/>
+                <label>Company Name:</label>
+                <br/>
+                <input type="text" id="c1">
+                <br/>
+                <label>Telephone No. <Span>*</Span></label>
+                <input type="number" id="n1" patter="\d{2}" required placeholder="Area Code">
+                <input type="number" id="n2" patter="\d{10}"  required placeholder="Phone Number">
+                <input type="radio" id="r3" name="r3"/>
+                <label>Mobile</label>
+                <input type="radio" id="r3" name="r3"/>
+                <label>Work</label>
+                <input type="radio" id="r3" name="r3"/>
+                <label>Home</label>
+                <br/>
+            </fieldset>
+            <input type="submit"  value="Create Account" class="button expanded"/>
+        </form>
+        </div>
+    </body>
+</html>
+<html>
