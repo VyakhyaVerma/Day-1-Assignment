@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <p class="display-6 text-center border rounded p-2 m-2 text-bg-dark" >Show Login</p>
+        <hr/>
+        <p id="xyz" class="display-6 text-danger text-center"></p>
+        <br/><br/>
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#m1" id="b1">Login</button>
+        </div>
+        <div class="modal" id="m1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title fw-bold" id="mt">User Login</p>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body text-start">
+                    <label>Input User ID : </label>
+                    <input type="text" name="uid" id="uid">
+                    <br/><br/>
+                    <label>Input Password : </label>
+                    <input type="password" name="pass" id="pass">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-danger" onclick="saved()">Login</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            function saved()
+            {
+                var i=document.getElementById("uid");
+                var p=document.getElementById("pass");
+                var par=document.getElementById("xyz");
+                var btn = document.getElementById("b1");
+                if(i.value=="USER123" && p.value=="ABC")
+                {
+                    var obj=document.getElementById("m1");
+                    var modalBSObj = bootstrap.Modal.getInstance(obj);
+                    modalBSObj.hide();
+                    btn.style.display = "none";
+                    par.innerText="Login Complete";
+                    return;
+                }
+                    var obj=document.getElementById("m1");
+                    var modalBSObj = bootstrap.Modal.getInstance(obj);
+                    modalBSObj.hide();
+                    par.innerText="Invalid User";
+            }
+        </script>
+    </body>
+</html>
