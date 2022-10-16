@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Canvas</title>
+    </head>
+    <body>
+        <h1>Draw a line within the rectangular area:</h1>
+        <canvas id="canvas" height="300px" width="300px" style="border:2px solid black;"></canvas>
+        <input type="button" value="Click For Lines" onclick="canvas()">
+        <script>
+            function canvas(){
+            var c1=document.getElementById("canvas");
+            var ctx = c1.getContext("2d");
+            ctx.moveTo(0,0);
+            ctx.lineTo(300,300);
+            ctx.strokeStyle="red";
+            ctx.linewidth= "5px";
+            ctx.stroke();
+            
+            }
+        </script>
+    </body>
+</html>
