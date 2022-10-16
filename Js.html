@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Display</title>
+    </head>
+    <body>
+        <h1>Dispaly welcome message based on the user value</h1>
+        <form action="Update.asp" method="post">
+            <fieldset>
+                <label>Username:</label>
+                <input type="text" id="uid" name ="user-id" />
+                <br/><br/>
+                <input type="button"   value="Get Message"   onclick="update()"  />
+                <br/><br/>
+                <p id="x"></p>
+        </form>
+        <script>
+            function update()
+            {
+                alert("hi");
+                var obj1=document.getElementById("uid");
+                var obj2=document.getElementById("x");
+                obj2.innerText  = "Welcome " + obj1.value;
+                
+            }
+        </script>
+    </body>
+</html>

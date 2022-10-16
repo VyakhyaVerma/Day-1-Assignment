@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Pizza Order</title>
+    </head>
+    <body>
+        <h1>WELCOME TO ITALIAN PIZZA!</h1>
+        <h3>We deliver pizza in 40 minutes max. If not - Pizza's on us!</h3>
+        <form action="Order.jsp" method="post">
+            <fieldset>
+                <label>Email</label><br/>
+                <input type="text" id="email" name ="email-id"/><br/><br/>
+                <label>Phone</label><br/>
+                <input type="text" id="phone" name ="phone" placeholder="Area"/>
+                <input type="text" id="phone" name ="phone" placeholder="Local"/>
+                <input type="text" id="phone" name ="phone" placeholder="Local"/>
+                <br/><br/>
+                <label>Pizza Size</label><br/>
+                <input type="radio" id="size" name="size"/>
+                <label>8-Inch</label>
+                <input type="radio" id="size" name="size"/>
+                <label>10-Inch</label>
+                <input type="radio" id="size" name="size"/>
+                <label>12-Inch</label>
+                <input type="radio" id="size" name="size"/>
+                <label>14-Inch</label><br/><br/>
+                <label>Toppings</label><br/>
+                <input type="checkbox" id="toppings" name="topping1" value="checked"/>
+                <label>Pepperoni</label>
+                <input type="checkbox" id="toppings" name="topping2" value="checked"/>
+                <label>Onions</label>
+                <input type="checkbox" id="toppings" name="topping3" value="checked"/>
+                <label>Mushrooms</label>
+                <input type="checkbox" id="toppings" name="topping4" value="checked"/>
+                <label>Sausage</label><br/><br/>
+                <label>Crusts</label><br/><br/>
+                <select name="crust" id="crust">
+                    <option>Thin Crust</option>
+                    <option>Hand-Tossed</option>
+                    <option>Wheat Crust</option>
+                </select>
+                <br/><br/>
+                <label>*</label>
+                <input type="checkbox" required id="ck1" name="ck1" value="Agree"/>
+                <label>I Agree to the TERMS AND CONDITIONS</label><br/><br/>
+            </fieldset>
+            <input type="submit"  value="Order Now"/>
+        </form>
+    </body>
+</html>
