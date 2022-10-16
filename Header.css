@@ -1,0 +1,11 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightyellow;
+  border: 2px solid darkgray;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  color: black;
+}

@@ -1,0 +1,51 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightyellow;
+  border: 2px solid darkgray;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  color: black;
+}
+.c1,
+.c5 {
+  color: darkgrey;
+  background-color: lightyellow;
+  text-align: justify;
+  margin: 5px;
+  padding: 5px;
+}
+.c5 {
+  background-color: blanchedalmond;
+}
+.c2 {
+  text-decoration: none;
+  background-color: lightpink;
+}
+.c2:hover {
+  color: black;
+  font-weight: bold;
+}
+.btn1 {
+  background-color: red;
+  padding: 2px;
+  border-radius: 5px;
+}
+.btn2 {
+  background-color: black;
+  padding: 2px;
+  border-radius: 5px;
+  color: white;
+  width: 200px;
+}
+.c3 {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+}
+.c4 {
+  height: 100px;
+  width: 100px;
+}

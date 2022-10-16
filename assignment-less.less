@@ -1,0 +1,61 @@
+@import 'Header';
+
+@primaryColor :  lightyellow;
+@x:100px;
+
+.c1
+{
+    color: darkgrey;
+    background-color: @primaryColor;
+    text-align: justify;
+    margin: 5px;
+    padding: 5px;
+}
+.c5
+{
+    &:extend(.c1);
+    background-color: blanchedalmond;
+}
+.c2
+{
+    text-decoration: none;
+    background-color: lightpink;
+    &:hover
+    {
+        color: black;
+        font-weight: bold;
+    }
+}
+.btn1
+{
+    background-color: red;
+    padding: 2px;
+    border-radius: 5px;
+}
+.btn2
+{
+    background-color:black;
+    padding: 2px;
+    border-radius: 5px;
+    color: white;
+    width:200px;
+}
+.imagechange(@shape) when (@shape="circle")
+{
+    height: @x;
+    width: @x;
+    border-radius: 100%;
+}
+.imagechange(@shape) when (@shape="square")
+{
+    height: @x;
+    width: @x;
+}
+.c3
+{
+    .imagechange("circle");
+}
+.c4
+{
+    .imagechange("square");
+}
