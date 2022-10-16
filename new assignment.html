@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Local Storage</title>
+    </head>
+    <body>
+        <h3>Details in Local Storage</h3>
+        <hr/>
+        <form action="store.php" method="post">
+            <fieldset>
+                <label>Customer Name : </label>
+                <input type="text" name="Customer_Name" id="t1">
+                <br/>
+                <label>Joined Date : </label>
+                <input type="date" name="Joined_Date" id="t2">
+                <br/>
+                <label>Favourite Color : </label>
+                <input type="color" name="Favourite_Color" id="t3">
+                <br/>
+            </fieldset>
+            <input type="button" value="Save Details" onclick="save()"/>
+            <input type="button" value="Delete Details" onclick="del()"/>
+        </form>
+        <p id="para"></p>
+    </body>
+    <script>
+        function save()
+        {
+            var o1=document.getElementById("t1");
+            var o2=document.getElementById("t2");
+            var o3=document.getElementById("t3");
+            var obj={};
+            obj.name=o1.value;
+            obj.date=o2.value;
+            obj.color=o3.value;
+            var str=JSON.stringify(obj);
+            localStorage.setItem("details",str);
+            alert("hi");
+        }
+        function del()
+        {
+            localStorage.removeItem("details");
+        }
+    </script>
+</html>
