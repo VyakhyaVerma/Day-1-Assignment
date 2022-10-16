@@ -1,0 +1,16 @@
+$size:10px;
+@for $i from 1 to 7
+{
+    .box-h#{$i}
+    {
+        font-size:$size*$i;
+        @if($i==1 or $i==2 or $i==3 )
+        {
+            color: red;
+        }
+        @else
+        {
+            color: green;
+        }
+    }
+}

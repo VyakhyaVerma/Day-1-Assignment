@@ -1,0 +1,31 @@
+@mixin theme($colour:blue, $shape:rectangle)
+{
+    $x:80px;
+    background-color:$colour;
+    height: $x;
+    width:130px;
+@if($shape=="circle")
+{
+    height: $x;
+    width: $x;
+
+    border-radius: 100%;
+}
+@if($shape=="square")
+{
+    height: $x;
+    width: $x;
+}
+}
+.btn-1
+{
+    @include theme;
+}
+.btn-2
+{
+    @include theme($colour:red, $shape:square); 
+}
+.btn-3
+{
+    @include theme($colour:green, $shape:circle); 
+}
